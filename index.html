@@ -65,7 +65,7 @@
 
         <ul class="contacts-list">
 
-          <li class="contact-item">
+          <li class="contact-item" style="margin-left: -20px;">
 
             <div class="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
@@ -73,7 +73,7 @@
 
             <div class="contact-info">
               <p class="contact-title">Email for contact</p>
-              <span class="contact-link" id="email-link" onclick="copyAndOpenEmail()">contact@ivanoweca.xyz</span>
+              <span class="contact-link" id="email-link" onclick="copyAndOpenEmail()"><a href="#" style="color: #FFBC5E;">contact@ivanoweca.xyz</a></span>
           </div>
 
         </ul>
@@ -83,19 +83,22 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="discord/-/users/944536206320992256_786493.html" class="social-link">
+            <a href="discord://-/users/951513329107619850" class="social-link" target="_blank">
+              <ion-icon name="logo-discord"></ion-icon>
+            </a>
+            <a href="https://discord.com/users/951513329107619850" class="social-link fallback-link" target="_blank" style="display:none;">
               <ion-icon name="logo-discord"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="youtube.html" class="social-link">
+            <a href="https://www.youtube.com/@IvanowDevelopment" class="social-link">
               <ion-icon name="logo-youtube"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="twitch.html" class="social-link">
+            <a href="#" class="social-link">
               <ion-icon name="logo-twitch"></ion-icon>
             </a>
           </li>
@@ -129,7 +132,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link>Skills</button>
           </li>
 
           <li class="navbar-item">
@@ -142,6 +145,10 @@
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Links</button>
           </li>
 
         </ul>
@@ -182,29 +189,29 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="assets/images/icon-design.svg" alt="design icon" width="40">
+                <img src="assets/images/webdev.svg" alt="design icon" width="40" style="color: yellow;">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
+                <h4 class="h4 service-item-title">Web Developer</h4>
 
                 <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
+                  The most high-quality development made at a professional level with colaboration with K. Georgiev.
                 </p>
               </div>
 
             </li>
-<li class="service-item">
+            <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="assets/images/icon-design.svg" alt="design icon" width="40">
+                <img src="assets/images/game.svg" alt="design icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
+                <h4 class="h4 service-item-title">Game Configurations</h4>
 
                 <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
+                  Game configurator for games in section Skills.
                 </p>
               </div>
 
@@ -225,10 +232,26 @@
               </div>
 
             </li>
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="assets/images/discord.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Discord Development</h4>
+
+                <p class="service-item-text">
+                  Discord Bot Development at medium level( Only Python in this current time*).
+                </p>
+              </div>
+
+            </li>
 
           </ul>
 
         </section>
+
 
         <!--
           - testimonials modal
@@ -268,11 +291,11 @@
 
           <ul class="clients-list has-scrollbar">
 
-            <!--li class="clients-item">
-              <a href="https://brutalevolution.lol">
-                <img src="assets/images/logo-1-color.png" alt="client logo">
+            <li class="clients-item">
+              <a href="https://discord.gg/ZttYJsnx7b" >
+                <img src="assets/images/ab.gif" alt="Anime Bulgaria" style="border-top-right-radius: 50px; border-bottom-left-radius: 50px;">
               </a>
-            </li -->
+            </li>
 
 
           </ul>
@@ -289,10 +312,10 @@
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+      <article class="skills" data-page="skills">
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <h2 class="h2 article-title">Skills</h2>
         </header>
 
         <section class="skill">
@@ -512,100 +535,134 @@
 
 
 
-      <!--
-        - #PORTFOLIO
-      -->
+  <!--
+    - #PORTFOLIO
+  -->
 
-      <article class="portfolio" data-page="portfolio">
+  <article class="portfolio" data-page="portfolio">
 
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
+    <header>
+      <h2 class="h2 article-title">Portfolio</h2>
+    </header>
 
-        <section class="projects">
+    <section class="projects">
 
-          <ul class="filter-list">
+      <ul class="filter-list">
 
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
+        <li class="filter-item">
+          <button class="active" data-filter-btn>All</button>
+        </li>
 
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
+        <li class="filter-item">
+          <button data-filter-btn>Web design</button>
+        </li>
 
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
+        <li class="filter-item">
+          <button data-filter-btn>Applications</button>
+        </li>
 
-            <li class="filter-item">
-              <button data-filter-btn>Servers</button>
-            </li>
+        <li class="filter-item">
+          <button data-filter-btn>Servers</button>
+        </li>
 
-          </ul>
+      </ul>
 
-          <div class="filter-select-box">
+      <div class="filter-select-box">
 
-            <button class="filter-select" data-select>
+        <button class="filter-select" data-select>
 
-              <div class="select-value" data-selecct-value>Select category</div>
+          <div class="select-value" data-selecct-value>Select category</div>
 
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Servers</button>
-              </li>
-
-            </ul>
-
+          <div class="select-icon">
+            <ion-icon name="chevron-down"></ion-icon>
           </div>
 
-          <!--ul class="project-list">
+        </button>
 
-            <li class="project-item  active" data-filter-item data-category="Servers">
-              <a href="#">
+        <ul class="select-list">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+          <li class="select-item">
+            <button data-select-item>All</button>
+          </li>
 
-                  <img src="assets/images/logo-2-color.png" alt="finance" loading="lazy">
-                </figure>
+          <li class="select-item">
+            <button data-select-item>Web design</button>
+          </li>
 
-                <h3 class="project-title">BloodLineRP</h3>
+          <li class="select-item">
+            <button data-select-item>Applications</button>
+          </li>
 
-                <p class="project-category">RolePlay Server</p>
+          <li class="select-item">
+            <button data-select-item>Servers</button>
+          </li>
 
-              </a>
-            </li -->
+        </ul>
 
-          </ul>
+      </div>
 
-        </section>
+      <ul class="project-list">
+
+        <!-- <li class="project-item active" data-filter-item data-category="Web design">
+          <a href="https://example.com/web-design">
+
+            <figure class="project-img">
+              <div class="project-item-icon-box">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+
+              <img src="assets/images/web-design.jpg" alt="Web Design Project">
+            </figure>
+
+            <h3 class="project-title">Web Design Project</h3>
+
+            <p class="project-category">Web Design</p>
+
+          </a>
+        </li> -->
+
+        <!-- <li class="project-item active" data-filter-item data-category="Applications">
+          <a href="https://example.com/application">
+
+            <figure class="project-img">
+              <div class="project-item-icon-box">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+
+              <img src="assets/images/application.jpg" alt="Application Project">
+            </figure>
+
+            <h3 class="project-title">Application Project</h3>
+
+            <p class="project-category">Applications</p>
+
+          </a>
+        </li> -->
+
+        <li class="project-item active" data-filter-item data-category="Servers">
+          <a href="https://discord.gg/ZttYJsnx7b">
+
+            <figure class="project-img">
+              <div class="project-item-icon-box">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+
+              <img src="assets/images/ab.gif" alt="Anime Bulgaria">
+            </figure>
+
+            <h3 class="project-title">AnimeBulgaria™️</h3>
+
+            <p class="project-category">Anime Bulgarian Server</p>
+
+          </a>
+        </li>
+
+      </ul>
+
+    </section>
+  </article>
 
       </article>
-
-
-
 
 
       <!--
@@ -681,7 +738,73 @@
           </form>
           <div id="contactResponse" class="contact-response"></div> <!-- Added class "contact-response" -->
       </article>
-    
+                  <!--
+        - #Links
+      -->
+
+      <article class="links" data-page="links">
+
+        <header>
+          <h2 class="h2 article-title">Links</h2>
+        </header>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Developing Skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Anime Bulgaria™️</h5>
+                <data value="10">Partnered Sponsorship</data>
+              </div>
+              
+              <div class="links">
+                <p style="width: 100%; background-color: #313131; border-radius: 15px;">
+                  <a href="https://discord.gg/ZttYJsnx7b" style="color: #FFBC5E; margin-left: 10px;">   Discord</a>
+                  <a href="https://animebulgaria.eu" style="color: #FFBC5E; margin-left: 10px;">   Website</a>
+                </p>
+              </div>
+              
+              <!-- <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 35%;"></div>
+              </div> -->
+
+            </li>
+
+
+          </ul>
+          
+          <ul class="skills-list content-card" style="margin-top: 2%;">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Anubis Hosting</h5>
+                <data value="10">Curently Unavalable - Future Project</data>
+              </div>
+              
+              <div class="links">
+                <p style="width: 100%; background-color: #313131; border-radius: 15px;">
+                  <a href="#" style="color: #FFBC5E; margin-left: 10px;">   Discord</a>
+                  <a href="#" style="color: #FFBC5E; margin-left: 10px;">   Website</a>
+                </p>
+              </div>
+              
+              <!-- <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 35%;"></div>
+              </div> -->
+
+            </li>
+
+
+          </ul>
+
+        </section>
+
+      </article>
 
     </div>
 
@@ -706,78 +829,41 @@
   <!-- script type="module" src="https/unpkgcom/7995401.js"></script>
   <script nomodule src="https/unpkgcom/2555905.js"></script -->
 
-<script>(function(){if (!document.body) return;var js = "window['__CF$cv$params']={r:'88e17c6d7a6a9b37',t:'MTcxNzQzNjYxMy4xNjIwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='cdn-cgi/challenge-platform/h/g/scripts/jsd/26ed7e9dda49/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
-<script>
-  function copyAndOpenEmail() {
-      const email = 'ivanoweca@proton.me';
-      // Create a temporary input to copy the email to clipboard
-      const tempInput = document.createElement('input');
-      tempInput.value = email;
-      document.body.appendChild(tempInput);
-      tempInput.select();
-      document.execCommand('copy');
-      document.body.removeChild(tempInput);
+ <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const filterButtons = document.querySelectorAll("[data-filter-btn]");
+    const selectItems = document.querySelectorAll("[data-select-item]");
+    const projectItems = document.querySelectorAll("[data-filter-item]");
 
-      // Open the email client
-      window.location.href = `mailto:${email}`;
-  }
-</script>
-<script>
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    const fullname = event.target.fullname.value;
-    const email = event.target.email.value;
-    const message = event.target.message.value;
-
-    const webhookURL = 'https://discord.com/api/webhooks/1247660915760042135/v9tmCbdQflYwM00vDlbnRASA8LXxylOlFyToLJycEONsIUS0sd3a66fZxPMd_Wy3Yq3N';
-
-    const embed = {
-        content: '<@951513329107619850>', // This will mention the user with the specified ID
-        embeds: [{
-            title: "New Contact Form Submission",
-            color: 5814783, // Blue color
-            fields: [
-                { name: "Full Name", value: fullname, inline: true },
-                { name: "Email", value: email, inline: true },
-                { name: "Message", value: message }
-            ],
-            timestamp: new Date()
-        }]
-    };
-
-    fetch(webhookURL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(embed)
-    }).then(response => {
-        if (response.ok) {
-            const contactResponse = document.getElementById('contactResponse');
-            contactResponse.textContent = 'Message sent successfully!';
-            contactResponse.classList.add('show'); // Show the message
-            setTimeout(() => {
-                contactResponse.classList.remove('show'); // Hide the message after 5 seconds
-            }, 5000);
-            event.target.reset();
-        } else {
-            showError('Error sending message. Please try again later.');
-        }
-    }).catch(error => {
-        showError('Error sending message. Please try again later.');
+    // Add event listeners to filter buttons
+    filterButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            const category = this.textContent.trim();
+            filterProjects(category);
+        });
     });
+
+    // Add event listeners to select items
+    selectItems.forEach(item => {
+        item.addEventListener("click", function() {
+            const category = this.textContent.trim();
+            filterProjects(category);
+        });
+    });
+
+    function filterProjects(category) {
+        projectItems.forEach(item => {
+            const itemCategory = item.getAttribute("data-category").trim();
+            if (category === "All" || itemCategory === category) {
+                item.classList.add("active");
+            } else {
+                item.classList.remove("active");
+            }
+        });
+    }
 });
 
-function showError(message) {
-    const contactResponse = document.getElementById('contactResponse');
-    contactResponse.textContent = message;
-    contactResponse.classList.add('show'); // Show the message
-    setTimeout(() => {
-        contactResponse.classList.remove('show'); // Hide the message after 5 seconds
-    }, 5000);
-}
-
-</script>
-
+ </script>
 
 
 </html>
